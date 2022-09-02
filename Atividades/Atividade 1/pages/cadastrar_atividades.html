@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Novo SIGAA</title>
+</head>
+<body>
+    <header>
+        <h1>NOVO SIGAA</h1>
+    </header>
+    <nav>
+        <a href="./control_panel.html">Painel de Controle</a>
+        <a href="./Disciplinas.html">Disciplinas</a>
+        <a href="./horas_extras.html">Horas Extras</a>
+        <a href="./estagios.html">Estágios</a>
+        <a href="./atividades.html">Atividades</a>
+        <a href="./historico.html">Histórico Escolar</a>
+        <a href="./cadastrar_atividades.html">Cadastrar Atividades</a>
+    </nav>
+    <main>
+        <br>
+        <h2>Cadastro de Atividades</h2>
+        <form action="">
+            Nome: <input type="text" placeholder="seu nome" required> 
+            <br>
+            Horas: <input type="number" placeholder="carga horária" min="0" max="256" required>
+            Data: <input type="date" min="1889-01-01" max="2023-12-31" required>
+            E-mail do responsável: <input type="email" placeholder="e-mail do responsável" required>
+            Telefone do responsável: <input type="tel" placeholder="telefone do responsável" required>
+            <br>
+            <input type="submit" value="Enviar dados">
+        </form>
+    </main>
+    <footer>
+        NOVO SIGAA | Copyright 2022 - 2100 Superintendência do William Bruno - UFC
+    </footer>
+</body>
+</html>
