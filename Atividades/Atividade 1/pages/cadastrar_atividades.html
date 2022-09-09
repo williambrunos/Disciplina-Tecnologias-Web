@@ -22,15 +22,26 @@
     </nav>
     <main>
         <br>
-        <h2>Cadastro de Atividades</h2>
+        <h2 class="descriptive">Cadastro de Atividades</h2>
         <form action="">
-            Nome: <input type="text" placeholder="seu nome" required> 
-            <br>
-            Horas: <input type="number" placeholder="carga horária" min="0" max="256" required>
-            Data: <input type="date" min="1889-01-01" max="2023-12-31" required>
-            E-mail do responsável: <input type="email" placeholder="e-mail do responsável" required>
-            Telefone do responsável: <input type="tel" placeholder="telefone do responsável" required>
-            <br>
+            
+            <div class="cadastro-nome-horas">
+                <div>
+                    <span class="input-request" class="to-display-inline">Nome:</span>
+                    <input type="text" placeholder="seu nome" required>
+                </div>
+                <div>
+                    <span class="input-request" class="to-display-inline">Horas:</span>
+                    <input type="number" placeholder="carga horária" min="0" max="256" required>
+                </div>
+            </div>
+            <div class="cadastro-email-telefone">
+                <span class="input-request">E-mail do responsável:</span>
+                <input type="email" placeholder="e-mail do responsável" required>
+                <span class="input-request">Telefone do responsável:</span>
+                <input type="tel" placeholder="telefone do responsável" required>
+            </div>
+            <span class="input-request">Data:</span><input type="date" min="1889-01-01" max="2023-12-31" required>
             <input type="submit" value="Enviar dados">
         </form>
     </main>

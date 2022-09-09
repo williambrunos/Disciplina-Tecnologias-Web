@@ -31,11 +31,55 @@ nav {
   gap: 1rem;
 }
 
+.descriptive {
+  background-color: #394674;
+  color: white;
+  width: 100%;
+}
+
+.input-request {
+  margin: .2rem;
+  padding: .25rem;
+
+  background-color: #394674;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.to-display-inline {
+  display: inline;
+}
+
+.cadastro-nome-horas {
+  margin: 1.5rem 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.cadastro-email-telefone {
+  margin: 1.5rem 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
 form {
   max-width: 1000px;
   display: flex;
   flex-direction: column;
   padding: 2rem;
+}
+
+input {
+  border-radius: 20px;
+  margin: .2rem;
+}
+
+#historico tr:nth-child(4) {
+  background-color: lime;
+  color: black;
 }
 
 footer {
@@ -44,7 +88,8 @@ footer {
   width: 100%;
   padding: 0.5rem;
 
-  position: absolute;
+  position: relative;
+  margin-top: auto;
   display: flex;
   justify-content: center;
   bottom: 0;

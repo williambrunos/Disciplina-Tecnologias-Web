@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Roboto:wght@400;500;700 & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="../styles/main.css">
     <title>Novo SIGAA</title>
 </head>
 <body>
+    <style>
+        .descriptive {
+            background-color: #394674;
+            color: white;
+
+            width: 100%;
+            margin: .2rem;
+        }
+
+        #system-color {
+            display: inline-block;
+        }
+
+        #img-aluno {
+            margin: .6rem;
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
     <header>
         <h1>NOVO SIGAA</h1>
     </header>
@@ -23,23 +49,24 @@
     <main>
         <section>
             <br>
-            <h2>Dados pessoais</h2>
-            <img src="../imgs/foto_bale.jpeg" width="120" height="120" alt="Foto do aluno">
-            <p>Nome: William Bruno Sales de Paula Lima</p>
+            <h2 class="descriptive">Dados pessoais</h2>
+            <img id="img-aluno" src="../imgs/foto_bale.jpeg" width="120" height="120" alt="Foto do aluno">
+            <p style="font-family: 'Roboto', sans-serif;">Nome: William Bruno Sales de Paula Lima</p>
             <p>e-mail: williambruno@alu.ufc.br</p>
             <p>IRA: 8.972</p>
             <p>Créditos cursados: 118 cr</p>
             <br>
         </section>
         <section>
-            <h2>Cor do sistema</h3>
+            <h2 class="descriptive">Cor do sistema</h3>
 
-            <input type="color" id="dark" name="dark" value="#192734">
-            <label for="dark">Escuro</label>
-            <br>
-        
-            <input type="color" id="light" name="light" value="#ffffff">
-            <label for="light">Claro</label>
+            <section id="system-color">
+                <input type="color" id="dark" name="dark" value="#192734">
+                <label for="dark">Escuro</label>
+            
+                <input type="color" id="light" name="light" value="#ffffff">
+                <label for="light">Claro</label>
+            </section>
             <br>
         </section>
     </main>
