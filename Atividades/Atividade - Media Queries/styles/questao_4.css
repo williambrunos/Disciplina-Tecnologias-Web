@@ -1,0 +1,72 @@
+#info-selecoes {
+    width: 50vw;
+
+    margin: auto;
+}
+
+#buttons-selecoes button {
+    width: 100%;
+}
+
+#text-selecoes h2 {
+    text-align: center;
+}
+
+#text-selecoes p {
+    text-align: justify;
+}
+
+#brasil {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    #info-selecoes {
+        display: block;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1279px) {
+    #buttons-selecoes {
+        width: 20vw;
+        margin-right: auto;
+
+        display: inline-block;
+    }
+
+    #text-selecoes {
+        width: 60vw;
+        display: inline-block;
+    }
+
+    #info-selecoes {
+        display: inline;
+    }
+}
+
+@media (min-width: 1280px) {
+    #buttons-selecoes {
+        width: 20vw;
+        margin-right: auto;
+
+        display: inline-block;
+    }
+
+    #text-selecoes {
+        width: 40vw;
+        display: inline-block;
+    }
+
+    #info-selecoes {
+        display: inline;
+    }
+
+    #brasil {
+        display: inline;
+
+        margin-left: auto;
+
+        width: 10vw;
+        height: 100%;
+    }
+}

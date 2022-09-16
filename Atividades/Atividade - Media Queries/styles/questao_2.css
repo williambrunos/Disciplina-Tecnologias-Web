@@ -1,0 +1,11 @@
+#questao_2 {
+    width: 25vw;
+    height: 25vh;
+    display: none;
+}
+
+@media (orientation: landscape) {
+    #questao_2 {
+        display: block;
+    }
+}

@@ -1,0 +1,84 @@
+#questao_1 {
+    width: 25vw;
+    height: 25vh;
+}
+
+@media (min-width: 320px) { 
+    #questao_1 {
+        background-color: black;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+@media (min-width: 480px) { 
+    #questao_1 {
+        background-color: lightblue;
+    }
+
+    p {
+        color: black;
+    }
+}
+
+@media (min-width: 600px) { 
+    #questao_1 {
+        background-color: lightgreen;
+    }
+
+    p {
+        color: black;
+    }
+}
+
+@media (min-width: 768px) {
+    #questao_1 {
+        background-color: lightyellow;
+    }
+
+    p {
+        color: black;
+    }
+ }
+
+@media (min-width: 800px) {
+    #questao_1 {
+        background-color: brown;
+    }
+
+    p {
+        color: white;
+    }
+ }
+
+@media (min-width: 1024px) { 
+    #questao_1 {
+        background-color: darkblue;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+@media (min-width: 1280px) {
+    #questao_1 {
+        background-color: darkgreen;
+    }
+
+    p {
+        color: white;
+    }
+ }
+
+@media (min-width: 1440px) { 
+    #questao_1 {
+        background-color: darkred;
+    }
+
+    p {
+        color: white;
+    }
+}
