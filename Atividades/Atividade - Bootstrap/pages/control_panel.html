@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/control_panel.css">
+    <link rel="stylesheet" href="../styles/nav_bar.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Novo SIGAA</title>
+</head>
+<body>
+    <header>
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <h1>NOVO SIGAA</h1>
+    </header>
+    <nav>
+        <div class="btn-group" id="nav-buttons-container" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./control_panel.html">Painel de Controle</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./Disciplinas.html">Disciplinas</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./horas_extras.html">Horas Extras</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./estagios.html">Estágios</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./atividades.html">Atividades</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./historico.html">Histórico Escolar</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./cadastrar_atividades.html">Cadastrar Atividades</a></button>
+        </div>
+    </nav>
+    <main>
+        <section id="student-data">
+            <div id="personal-data">
+                <h2>Dados pessoais</h2>
+                <img src="../imgs/perfil_B3.jpg" width="240" height="240" alt="Foto do aluno">
+            </div>
+            <div class="button-container">
+                <div class="button-row">
+                    <button type="button" class="btn btn-primary position-relative">
+                        Notificacoes  
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          4
+                        </span>
+                    </button>
+                </div>
+                <div class="button-row">
+                    <button type="button" class="btn btn-primary position-relative">
+                        Inbox
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          99+
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+                </div>
+                <div class="button-row">
+                    <button type="button" class="btn btn-primary position-relative">
+                        Alertas
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          2
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div id="contact-data">
+                <p><span class="bold">Nome</span>: William Bruno Sales de Paula Lima</p>
+                <p><span class="bold">e-mail</span>: williambruno@alu.ufc.br</p>
+                <p><span class="bold">IRA</span>: 8.972</p>
+                <p><span class="bold">Créditos cursados</span>: 118 cr</p>
+            </div>
+        </section>
+        <section>
+            <h2>Cor do sistema</h3>
+
+            <input type="color" id="dark" name="dark" value="#192734">
+            <label for="dark">Escuro</label>
+            <br>
+        
+            <input type="color" id="light" name="light" value="#ffffff">
+            <label for="light">Claro</label>
+            <br>
+        </section>
+    </main>
+    <footer>
+        Contato do desenvolvedor: williambruno@alu.ufc.br
+    </footer>
+</body>
+</html>

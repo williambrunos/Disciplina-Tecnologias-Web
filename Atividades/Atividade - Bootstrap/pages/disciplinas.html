@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/disciplinas.css">
+    <link rel="stylesheet" href="../styles/nav_bar.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Novo SIGAA</title>
+</head>
+<body>
+    <header>
+        <h1>NOVO SIGAA</h1>
+    </header>
+    <nav>
+        <div class="btn-group" id="nav-buttons-container" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./control_panel.html">Painel de Controle</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./Disciplinas.html">Disciplinas</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./horas_extras.html">Horas Extras</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./estagios.html">Estágios</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./atividades.html">Atividades</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./historico.html">Histórico Escolar</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./cadastrar_atividades.html">Cadastrar Atividades</a></button>
+        </div>
+    </nav>
+    <main>
+        <div id="cards">
+            <div class="card" style="width: 18rem;">
+                <img src="../imgs/tech_image.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Notificação - Inteligência Computacional</h5>
+                  <p class="card-text">Jarbas Joaci postou uma atividade - Redes Neurais e Lógica Fuzzy.</p>
+                  <a href="https://si3.ufc.br/sigaa/verTelaLogin.do%3bjsessionid=89A9BC4EB6E17213F394386646CD5E0E.node22" target="_blank" class="btn btn-primary">Visualizar SIGAA</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../imgs/html_logo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Notificação - Tecnolgias Web</h5>
+                  <p class="card-text">Fischer Jônatas postou uma notificação - Bom feriado a tod@s!.</p>
+                  <a href="https://si3.ufc.br/sigaa/verTelaLogin.do%3bjsessionid=89A9BC4EB6E17213F394386646CD5E0E.node22" target="_blank" class="btn btn-primary">Visualizar SIGAA</a>
+                </div>
+            </div>
+        </div>
+        <h2>Disciplinas cursadas</h2>
+        <p>Lista de disciplinas cursadas e o progresso relativo ao total de disciplinas disponíveis</p>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Disciplinas Obrigatórias
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <br>
+                    <label for="obrigatorias">Progresso de obrigatórias</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="Basic example" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p>Cursadas atualmente:</p>
+                    <table border="1">
+                        <tr>
+                            <td>Disciplina</td>
+                            <td>Créditos</td>
+                            <td>Código</td>
+                            <td>Horas Totais</td>
+                            <td>Horário</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Bancos de dados</a></td>
+                            <td>4 cr</td>
+                            <td>01</td>
+                            <td>64h</td>
+                            <td>
+                                SEG 10:00-12:00
+                                QUA 10:00-12:00
+                                (12/08/2022 - 13/12/2022)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Engenharia de Software</a></td>
+                            <td>4 cr</td>
+                            <td>01</td>
+                            <td>64h</td>
+                            <td>
+                                TER 08:00-10:00
+                                QUI 08:00-10:00
+                                (12/08/2022 - 13/12/2022)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Inteligencia Computacional</a></td>
+                            <td>4 cr</td>
+                            <td>01</td>
+                            <td>64 h</td>
+                            <td>
+                                SEG 08:00-10:00
+                                QUA 08:00-10:00
+                                (12/08/2022 - 13/12/2022) 
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Disciplinas Eletivas
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <br>
+                    <label for="eletivas">Progresso das eletivas</label>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="Basic example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p>Cursadas atualmente</p>
+                    <table border="1">
+                        <tr>
+                            <td>Disciplina</td>
+                            <td>Créditos</td>
+                            <td>Código</td>
+                            <td>Horas Totais</td>
+                            <td>Horário</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Tecnologias Web</a></td>
+                            <td>4 cr</td>
+                            <td>01</td>
+                            <td>64 h</td>
+                            <td>
+                                TER 10:00-12:00
+                                QUI 10:00-12:00
+                                (12/08/2022 - 13/12/2022) 
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+              </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Contato do desenvolvedor: williambruno@alu.ufc.br
+    </footer>
+</body>
+</html>

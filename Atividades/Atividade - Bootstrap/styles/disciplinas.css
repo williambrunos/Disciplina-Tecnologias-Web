@@ -1,0 +1,9 @@
+#cards {
+    display: flex;
+    gap: 1rem;
+}
+
+#cards div img {
+    width: 200px;
+    height: 200px;
+}

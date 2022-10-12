@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/nav_bar.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Novo SIGAA</title>
+</head>
+<body>
+    <header>
+        <h1>NOVO SIGAA</h1>
+    </header>
+    <nav>
+        <div class="btn-group" id="nav-buttons-container" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./control_panel.html">Painel de Controle</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./Disciplinas.html">Disciplinas</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./horas_extras.html">Horas Extras</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./estagios.html">Estágios</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./atividades.html">Atividades</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./historico.html">Histórico Escolar</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./cadastrar_atividades.html">Cadastrar Atividades</a></button>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h2>Novidades de Estágios!</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../imgs/b3_logo.png" class="d-block w-100" alt="logo-b3" width="250px" height="250px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../imgs/microsoft_logo.png" class="d-block w-100" alt="logo-microsoft" width="250px" height="250px">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" style="background-color: blue;" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" style="background-color: blue;" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <h2>Horas de Estágio Obrigatórias</h2>
+            <p>Total de horas de estágio obrigatórias: 256h</p>
+            <br>
+            <label for="estagio_obrigatorio">Horas de Estáio Obrigatórias</label>
+            <progress id="estagio_obrigatorio" max="100" value="100">100%</progress>
+            <br>
+
+            <table border="1">
+                <tr>
+                    <td>Horas Totais de Estágio</td>
+                    <td>Horas computadas</td>
+                </tr>
+                <tr>
+                    <td>256h</td>
+                    <td>256h</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        Contato do desenvolvedor: williambruno@alu.ufc.br
+    </footer>
+</body>
+</html>

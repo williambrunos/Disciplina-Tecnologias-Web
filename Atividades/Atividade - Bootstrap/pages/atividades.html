@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/nav_bar.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Novo SIGAA</title>
+</head>
+<body>
+    <header>
+        <h1>NOVO SIGAA</h1>
+    </header>
+    <nav>
+        <div class="btn-group" id="nav-buttons-container" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./control_panel.html">Painel de Controle</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./Disciplinas.html">Disciplinas</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./horas_extras.html">Horas Extras</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./estagios.html">Estágios</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./atividades.html">Atividades</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./historico.html">Histórico Escolar</a></button>
+            <button type="button" class="btn btn-outline-primary nav-button"><a href="./cadastrar_atividades.html">Cadastrar Atividades</a></button>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <button 
+                type="button" 
+                class="btn btn-lg btn-danger" 
+                data-bs-toggle="popover" 
+                data-bs-title="Popover title" 
+                data-bs-content="Filtrar atividades por seminário, estágio e TCC">
+                Filtrar atividades
+            </button>
+
+            <h2>Atividades Computadas e Computáveis</h2>
+            <p>Atividades já computadas pelo estudante e computáveis</p>
+
+            <h3>Seminários de Estágio</h3>
+            <label for="seminarios_estagio">Seminários de Estágio</label>
+            <progress id="seminarios_estagio" max="100" value="0"></progress>
+
+            <br>
+            <table border="1">
+                <tr>
+                    <td>Horas Computáveis</td>
+                    <td>Horas Computadas</td>
+                </tr>
+                <tr>
+                    <td>64h</td>
+                    <td>0h</td>
+                </tr>
+            </table>
+
+            <br>
+            <h3>Seminários de Monografia</h3>
+            <label for="seminarios_monografia">Seminários de Monografia</label>
+            <progress id="seminarios_monografia" max="100" value="100"></progress>
+
+            <br>
+            <table border="1">
+                <tr>
+                    <td>Horas Computáveis</td>
+                    <td>Horas Computadas</td>
+                </tr>
+                <tr>
+                    <td>64h</td>
+                    <td>64h</td>
+                </tr>
+            </table>
+
+            <br>
+            <h3>Trabalho de Conclusão de Curso</h3>
+            <label for="tcc">Trabalho de Conclusão de Curso</label>
+            <progress id="tcc" max="100" value="100"></progress>
+
+            <br>
+            <table border="1">
+                <tr>
+                    <td>Horas Computáveis</td>
+                    <td>Horas Computadas</td>
+                </tr>
+                <tr>
+                    <td>64h</td>
+                    <td>64h</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        Contato do desenvolvedor: williambruno@alu.ufc.br
+    </footer>
+
+</body>
+</html>

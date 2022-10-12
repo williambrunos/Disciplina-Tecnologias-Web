@@ -1,0 +1,13 @@
+#nav-buttons-container {
+    margin-top: 2rem;
+}
+
+.nav-button a {
+    text-decoration: none;
+    color: blue;
+}
+
+.nav-button:hover a {
+    text-decoration: none;
+    color: white;
+}
