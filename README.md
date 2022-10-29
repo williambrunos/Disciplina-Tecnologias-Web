@@ -61,3 +61,19 @@ Os campos do formulário devem possuir validação.
 Consulta:
 
 [Documentação W3 Schools](https://www.w3schools.com/html/default.asp)
+
+### Atividade 02
+
+Atividade de display Flex
+
+### Atividade 03
+
+Atividade de media queries
+
+### Atividade 04 
+
+Atividade de bootstrap
+
+### Atividade 05
+
+Lista de questões de javascript
