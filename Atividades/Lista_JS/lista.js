@@ -28,11 +28,28 @@ const conatenateArrayInString = array => array.join();
 // Questão 6
 const isEven = number => number % 2 === 0;
 
-const putHifenBetweenEveryEvenNumberPairs = number => {
-    numberAsString = number.toString();
-    numberAsArray = numberAsString.split('');
-    
+function toNumber(value) {
+    return Number(value);
+ }
 
+const putHifenBetweenEveryEvenNumberPairs = number => {
+    const numberAsString = number.toString(); // '123'
+    let numberAsArray = numberAsString.split('');  // [1, 2, 3]
+    numberAsArray = numberAsArray.map(toNumber);
+    const arrayLength = numberAsArray.length;
+    const arrayCopy = [...numberAsArray];
+    let count = 0;
+
+    for (let i = 1; i < arrayLength; i++) {
+        if (isEven(numberAsArray[i])) {
+            if (isEven(numberAsArray[i-1])) {
+                arrayCopy.splice(i+count, 0, '-');
+                count += 1;
+            }
+        }
+    }
+    
+    return arrayCopy;
 };
 
 // Questão 7
@@ -113,7 +130,7 @@ console.log(`=== Questão 3 SEM PASSAR N === \n${getNFirstElementsOfArray([1, 2,
 console.log(`=== Questão 4 PASSANDO N === \n ${getNLastElementsOfArray([1, 2, 3, 4, 5], n=3)}`);
 console.log(`=== Questão 4 SEM PASSAR N === \n${getNLastElementsOfArray([1, 2, 3, 4, 5])}`);
 console.log(`=== Questão 5 ===\n${typeof conatenateArrayInString([1, 2, 3, 4, 5])}`)/
-console.log(`=== QUESTÃO 6 ===`);
+console.log(`=== QUESTÃO 6 ===\n${putHifenBetweenEveryEvenNumberPairs(1223445566)}`);
 console.log(`=== QUESTÃO 7 === \n${getTheMostFrequentElement([1, 1, 1, 1, 1, 2, 3, 4, 5, 6])}`);
 console.log(`=== QUESTÃO 8 === \n${removeDuplicates([1, "apple", "papple", "apple", "Apple", 2, 3, 4, 4, 5, 6])}`);
 console.log(`=== QUESTÃO 9 ===\n${sumDifferentArrayValues([1, 2, 3, 4], [3, 4, 5])}`);
